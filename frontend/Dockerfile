@@ -1,5 +1,3 @@
-<html>
-  <body>
-    <h1> Bem vindo ao frontend Docker </h1>
-  </body>
-</html>
+FROM nginx:alpine
+COPY index.html /usr/share/nginx/html
+EXPOSE 80
